@@ -34,13 +34,13 @@
         <h2>Calcolo del biglietto</h2>
         <div>
             <input type="text" name="passengerName" id="passengerName" placeholder="John Doe">
-            <input type="text" name="distance" id="distance" placeholder="100">
-            <select name="eta" id="passengerAge">
-                <option value="underAge">Minorenne</option>
-                <option value="Adult">Adulto</option>
-                <option value="Old">Over 65</option>
+            <input type="number" name="distance" id="distance" placeholder="100">
+            <select name="age" id="passengerAge">
+                <option value="0">Minorenne</option>
+                <option value="1">Adulto</option>
+                <option value="2">Over 65</option>
             </select>
-            <input type="button" value="Calcola">
+            <input type="button" id="calculate" value="Calcola">
         </div>
     </section>
 
