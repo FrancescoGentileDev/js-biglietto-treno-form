@@ -2,6 +2,10 @@
     font-family: 'Open Sans', sans-serif;
  }
 
+ :root {
+    --bg-color: rgb(160, 40, 40);
+ }
+
 /*#region utils*****/
  .border {
     border: 1px solid black
@@ -10,7 +14,7 @@
 /*#endregion utils*****/
 
  main {
-    background-color: rgb(160, 40, 40);
+    background-color: var(--bg-color);
     padding: 20px 100px
  }
  h2 {
@@ -26,3 +30,24 @@
  #ticketDetails > div > .row{
     min-height:100px
  }
+
+
+ /*#region Input restyle*****/
+ input[type="text"], input[type="number"], select {
+    background-color: white;
+    border: 1px solid var(--bg-color);
+    border-radius: 5px;
+    height: 2.5rem;
+    padding: 0 10px
+ }
+input[type="button"] {
+    height: 2rem;
+    background-color: lightgrey;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+input[type="button"]:active {
+    border-color: var(--bg-color);
+    background-color: grey
+}
+ /*#endregion Input restyle*****/

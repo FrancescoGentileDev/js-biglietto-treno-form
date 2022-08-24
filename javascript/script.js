@@ -34,7 +34,7 @@ function showTicket(passengerName, eta, costoTot) {
 
     document.getElementById("viewCab").innerHTML = Math.floor(Math.random() * 20) + 1 
     document.getElementById("viewCP").innerHTML = Math.floor(Math.random() * 10000) + 1 
-    document.getElementById("viewPrice").innerHTML = costoTot;
+    document.getElementById("viewPrice").innerHTML = "€"+costoTot;
 
 
 
