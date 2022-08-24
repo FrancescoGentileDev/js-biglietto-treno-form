@@ -238,7 +238,9 @@
 /*#endregion flex-section*****/
 
 /*#region margin size*****/
-
+.m-auto {
+  margin: 0 auto;
+}
 .m-0 {
   margin: 0;
 }

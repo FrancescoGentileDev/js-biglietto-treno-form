@@ -21,7 +21,7 @@
     <!--#endregion BOOTSTRAP-->
 
     <!--#region MY UTILS-->
-    <!-- <link rel="stylesheet" href="css/utils.css"> -->
+    <link rel="stylesheet" href="css/utils.css">
     <!--#endregion MY UTILS-->
 
     <link rel="stylesheet" href="css/style.css">
@@ -29,50 +29,65 @@
 </head>
 
 <body>
-
-    <section id="ticketCalculation">
-        <h2>Calcolo del biglietto</h2>
-        <div>
-            <input type="text" name="passengerName" id="passengerName" placeholder="John Doe">
-            <input type="number" name="distance" id="distance" placeholder="100">
-            <select name="age" id="passengerAge">
-                <option value="0">Minorenne</option>
-                <option value="1">Adulto</option>
-                <option value="2">Over 65</option>
-            </select>
-            <input type="button" id="calculate" value="Calcola">
-        </div>
-    </section>
-
-    <section id="ticketDetails">
-        <h2>Il tuo biglietto</h2>
-        <div>
-            <div>
-                <p id="viewName">John Doe</p>
+    <main>
+        <section id="ticketCalculation">
+            <h2 class="text-align-center pt-2 mb-2">Calcolo del biglietto</h2>
+            <div class="bg-white p-3 m-auto">
+                <div class=" row flex-center cg-2 mt-1">
+                    <input type="text" name="passengerName" id="passengerName" placeholder="John Doe">
+                    <input type="number" name="distance" id="distance" placeholder="100">
+                    <select name="age" id="passengerAge">
+                        <option value="0">Minorenne</option>
+                        <option value="1">Adulto</option>
+                        <option value="2">Over 65</option>
+                    </select>
+                </div>
+                <div class="row flex-center cg-1 mt-5">
+                    <input type="button" id="calculate" value="Calcola">
+                    <input type="button" id="calculate" value="Annulla">
+                </div>
             </div>
+        </section>
 
-            <div>
-                <p id="viewRate">tariffa standard</p>
+        <section id="ticketDetails">
+            <h2 class="text-align-center mt-5 mb-2">Il tuo biglietto</h2>
+
+
+            <div class="bg-white mb-5 p-2">
+                <h3>Dettaglio passeggeri</h3>
+                <div class="border row flex-between align-center">
+                    <div class="bg-gray-light self-stretch p-2 flex-between col no-grow">
+                        <h3>Nome Passeggero</h3>
+                        <p id="viewName">John Doe</p>
+                    </div>
+
+                    <div>
+                        <h3>Offerta</h3>
+                        <p id="viewRate">tariffa standard</p>
+                    </div>
+
+                    <div>
+                        <h3>Carrozza</h3>
+                        <p id="viewCab">5</p>
+                    </div>
+
+                    <div>
+                        <h3>CP</h3>
+                        <p id="viewCP">3129012</p>
+                    </div>
+
+                    <div>
+                        <h3>PREZZO</h3>
+                        <p id="viewPrice">20€</p>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div>
-                <p  id="viewCab">5</p>
-            </div>
-
-            <div>
-                <p id="viewCP">3129012</p>
-            </div>
-
-            <div>
-                <p id="viewPrice">20€</p>
-            </div>
-            <div>
-
-            </div>
-        </div>
-    </section>
-
-
+    </main>
 
 
 

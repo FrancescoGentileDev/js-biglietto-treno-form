@@ -1,0 +1,28 @@
+ body {
+    font-family: 'Open Sans', sans-serif;
+ }
+
+/*#region utils*****/
+ .border {
+    border: 1px solid black
+ }
+
+/*#endregion utils*****/
+
+ main {
+    background-color: rgb(160, 40, 40);
+    padding: 20px 100px
+ }
+ h2 {
+    color: white
+ }
+
+ #ticketCalculation > div, #ticketDetails > div {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.26);
+ }
+
+
+ #ticketDetails > div > .row{
+    min-height:100px
+ }
