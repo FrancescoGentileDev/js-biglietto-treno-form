@@ -3,7 +3,7 @@ const button = document.getElementById("calculate");
 button.addEventListener("click", () => {
   const passengerName = document.getElementById("passengerName").value;
   const eta =parseInt(document.getElementById("passengerAge").value) ;
-  const percorrenza = document.getElementById("distance").value;
+  const percorrenza = parseInt(document.getElementById("distance").value);
     let costoTotale = percorrenza * 0.21;
     switch (eta) {
         case 0:

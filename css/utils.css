@@ -694,6 +694,18 @@
 
   }
 /*#endregion button*****/
+/*#region Font Weights *****/
+
+.f-weight {
+  font-weight: normal;
+
+}
+
+.f-weight-b {
+  font-weight: bold;
+}
+/*#endregion Font Weights *****/
+
 
 /*#region list*****/
 ul {

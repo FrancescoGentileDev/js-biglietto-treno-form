@@ -34,13 +34,22 @@
             <h2 class="text-align-center pt-2 mb-2">Calcolo del biglietto</h2>
             <div class="bg-white p-3 m-auto">
                 <div class=" row flex-center cg-2 mt-1">
+                    <div class="col no-grow rg-1 f-weight-b">
+                    <label for="passengerName">Nome</label>
                     <input type="text" name="passengerName" id="passengerName" placeholder="John Doe">
+                    </div>
+                    <div class="col no-grow rg-1 f-weight-b">
+                    <label for="distance">Distanza in Km</label>
                     <input type="number" name="distance" id="distance" placeholder="100">
-                    <select name="age" id="passengerAge">
-                        <option value="0">Minorenne</option>
-                        <option value="1">Adulto</option>
-                        <option value="2">Over 65</option>
-                    </select>
+                    </div>
+                    <div class="col no-grow rg-1 f-weight-b">
+                        <label for="age">Età del passeggero</label>
+                        <select name="age" id="passengerAge">
+                            <option value="0">Minorenne</option>
+                            <option value="1">Adulto</option>
+                            <option value="2">Over 65</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="row flex-center cg-1 mt-5">
                     <input type="button" id="calculate" value="Calcola">
